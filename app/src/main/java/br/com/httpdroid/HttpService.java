@@ -1,4 +1,4 @@
-﻿package br.com.httpdroid;
+package br.com.httpdroid;
 
 import com.google.gson.Gson;
 
@@ -441,7 +441,7 @@ public class HttpService<Object> implements IMethods<Object> {
      * passado como parâmetro
      */
     public <T> T convertResponseTo(Type type) {
-       return gson.fromJson(this.responseStringReturned, type);
+        return gson.fromJson(this.responseStringReturned, type);
     }
 
     private HttpUrl getUrlWithFilters() {
